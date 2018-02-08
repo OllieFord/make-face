@@ -1,0 +1,17 @@
+certifi==2017.11.5
+cffi==1.11.2
+click==6.7
+Flask==0.12.2
+gunicorn==19.7.1
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+numpy==1.14.0
+olefile==0.44
+Pillow==4.2.1
+pycparser==2.18
+scipy==1.0.0
+six==1.11.0
+http://download.pytorch.org/whl/cpu/torch-0.3.0.post4-cp27-cp27mu-linux_x86_64.whl
+torchvision==0.2.0
+Werkzeug==0.14.1

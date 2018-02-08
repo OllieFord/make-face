@@ -1,0 +1,171 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+
+  }
+}
+
+
+header {
+    grid-column: span 3;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.4em;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    grid-column-start: 2;
+}
+
+nav {
+    padding: 20px;
+}
+
+aside {
+    padding: 20px;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+
+
+.center {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.button {
+    background-color: Transparent;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 3em;
+    font-family: 'Rubik', sans-serif;
+}
+
+.inputFile {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: 1;
+    
+}
+
+.inputFile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.inputFile:focus + label,
+.inputFile + label:hover {
+    color: #24305E;
+}
+
+input[type="submit"]{
+    background-color: transparent;
+    color: black;
+    font-size: 1.25em;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    z-index: 1;
+}
+
+input[type="submit"]:hover{
+    color: #24305E
+}
+
+top{
+    z-index: 1
+}
+
+.outputImg {
+    width: 80%;
+    height: 80%;
+}
+
+
+.svgContainer {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+
+@media (min-width: 1150px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+
+  }
+    .svgContainer {
+        display: block;
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+        vertical-align: middle;
+        overflow: hidden;
+}
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 3rem;
+}
+    main {
+        padding-top: 100px;
+}
+}

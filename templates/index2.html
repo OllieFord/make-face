@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Face2Issy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rubik:700" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>Your Face</h1>
+        </div>
+        <div class="center" >
+            <img class="outputImg" src="{{url_for('send_image', filename=image_name)}}" >
+        </div>
+        <div>
+                <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
+                    <input type="file" name="image" id="file" class="inputFile">
+                    <label for="file">Choose a file</label> <br>
+                    <input type="submit" value="GO AGAIN" class="submit">
+                </form>
+        </div>
+        <div class="footer" >
+            <p>About</p>
+        </div>
+    </main>
+    <script src="static/main.js"></script>
+</body>
+</html>

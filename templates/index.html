@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>MakeFace</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/reset.css">
+    <link rel="stylesheet" href="static/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rubik:400" rel="stylesheet">
+</head>
+<body class="container">
+    <header>Issy 2 Face</header>
+
+    <main>
+        <h1>M &nbsp;&nbsp; A &nbsp;&nbsp;  K &nbsp;&nbsp;  E</h1>
+        <div >
+            <img src="static/IssyFace.svg" class="svgContainer" >
+        </div>
+        <div>
+                <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
+                    <input type="file" name="image" id="file" class="inputFile">
+                    <label for="file">Choose a file</label> <br>
+                    <input type="submit" value="GO!" class="submit">
+                </form>
+        </div>
+    </main>
+    <footer>About</footer>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

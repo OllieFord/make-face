@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Face2Issy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="static/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rubik:400" rel="stylesheet">
+</head>
+<body>
+    <header></header>
+    <main>
+        <div>
+            <h1>M &nbsp;&nbsp; A &nbsp;&nbsp;  K &nbsp;&nbsp;  E</h1>
+        </div>
+        <div class="center" >
+            <img src="static/IssyFace.svg" >
+        </div>
+        <div>
+                <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
+                    <input type="file" name="image" id="file" class="inputFile">
+                    <label for="file">Choose a file</label> <br>
+                    <input type="submit" value="GO!" class="submit">
+                </form>
+            <p> Please upload a picture!</p>
+        </div>
+        <div class="footer" >
+            <p>About</p>
+        </div>
+    </main>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
