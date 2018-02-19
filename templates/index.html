@@ -5,13 +5,14 @@
     <title>MakeFace</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="stylesheet" href="static/reset.css">
     <link rel="stylesheet" href="static/styles.css">
-
     <link href="https://fonts.googleapis.com/css?family=Lato|Rubik:400" rel="stylesheet">
+
 </head>
 <body class="container">
-    <header>Issy 2 Face</header>
+    <header></header>
 
     <main>
         <h1>M &nbsp;&nbsp; A &nbsp;&nbsp;  K &nbsp;&nbsp;  E</h1>
@@ -19,7 +20,7 @@
             <img src="static/IssyFace.svg" class="svgContainer" >
         </div>
         <div>
-                <form method="POST" action="https://makeface.scalingo.io/upload" enctype=multipart/form-data class="center" id="top">
+                <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
                     <input type="file" name="image" id="file" class="inputFile">
                     <label for="file">Choose a file</label> <br>
                     <input type="submit" value="GO!" class="submit">

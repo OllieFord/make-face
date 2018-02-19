@@ -4,30 +4,28 @@
     <meta charset="utf-8">
     <title>Face2Issy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="static/reset.css">
     <link rel="stylesheet" href="static/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato|Rubik:700" rel="stylesheet">
 </head>
-<body>
+<body class="container">
     <header></header>
     <main>
-        <div>
             <h1>Your Face</h1>
-        </div>
         <div class="center" >
-            <img class="outputImg" src="{{url_for('send_image', filename=image_name)}}" >
+            <img src="{{url_for('send_image', filename=image_name)}}" >
         </div>
         <div>
-                <form method="POST" action="https://makeface.scalingo.io/upload" enctype=multipart/form-data class="center" id="top">
+                <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
                     <input type="file" name="image" id="file" class="inputFile">
                     <label for="file">Choose a file</label> <br>
                     <input type="submit" value="GO AGAIN" class="submit">
                 </form>
         </div>
-        <div class="footer" >
-            <p>About</p>
-        </div>
     </main>
+    <footer>About</footer>
     <script src="static/main.js"></script>
 </body>
 </html>
