@@ -1,4 +1,4 @@
-from flask import Flask, send_from_directory, request, render_template
+from Flask import Flask, send_from_directory, request, render_template
 import logging, os
 import torch, torchvision
 from PIL import Image, ImageOps
@@ -57,7 +57,7 @@ def upload():
 
         counter = uniqid()
 
-        numpy_img.save("tmp/output" + str(counter) + ".png" , "PNG")
+        numpy_img.save("tmp/output" + str(counter) + ".png", "PNG")
         remove_background("tmp/output" + str(counter) + ".png")
         filename = "output" + str(counter) + ".png"
 
