@@ -143,6 +143,14 @@ top{
 	overflow: hidden;
 }
 
+.outputContainer {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
 
 @media (min-width: 1150px) {
     .container {
@@ -159,6 +167,15 @@ top{
         vertical-align: middle;
         overflow: hidden;
 }
+    .outputContainer {
+        display: block;
+        position: relative;
+        width: 50%;
+        vertical-align: middle;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right:auto;
+    }
 }
 
 @media (max-width: 800px) {
