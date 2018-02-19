@@ -13,10 +13,8 @@
 <body class="container">
     <header></header>
     <main>
-            <h1>Your Face</h1>
-        <div class="center" >
-            <img src="{{url_for('send_image', filename=image_name)}}" >
-        </div>
+        <h1>Your Face</h1>
+            <img src="{{url_for('send_image', filename=image_name)}}" class="svgContainer" >
         <div>
                 <form method="POST" action="/upload" enctype=multipart/form-data class="center" id="top">
                     <input type="file" name="image" id="file" class="inputFile">
