@@ -1,4 +1,4 @@
-from Flask import Flask, send_from_directory, request, render_template
+from flask import Flask, send_from_directory, request, render_template
 import logging, os
 import torch, torchvision
 from PIL import Image, ImageOps
